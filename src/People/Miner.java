@@ -22,14 +22,18 @@ public class Miner extends Person implements Inter {
         Scanner an1 = new Scanner(System.in);
         List<Miner> miners = new ArrayList<>();
         if (b == 1) {
-            System.out.println("Enter name");
-            String name = an1.nextLine();
-            System.out.println("Enter age");
-            int age = an.nextInt();
-            Miner miner = new Miner(name, age);
-            miners.add(miner);
-            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-            b = an.nextInt();
+            try {
+                System.out.println("Enter name");
+                String name = an1.nextLine();
+                System.out.println("Enter age");
+                int age = an.nextInt();
+                Miner miner = new Miner(name, age);
+                miners.add(miner);
+                System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+                b = an.nextInt();
+            } catch (Exception p) {
+                System.out.println("Веди првильно данные!");
+            }
         }
         if (b == 2) {
             System.out.println("Select ID to delete");
