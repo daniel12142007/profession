@@ -43,6 +43,7 @@ public class Run {
                 System.out.println("1)Registration\n2)Get data");
                 int b = scanner.nextInt();
                 miners.Function(b);
+
                 Miner1();
             }
             if (a == 2) {
@@ -50,6 +51,9 @@ public class Run {
                 int b = scanner.nextInt();
                 hunter.Function(b);
                 Hunter1();
+                System.out.println("\n1)awm\n2)scar\n3)digl");
+                int w = scanner.nextInt();
+                hunter.Functions(w);
             }
         }
     }

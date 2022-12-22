@@ -58,7 +58,35 @@ public class Hunter extends Person implements Inter {
     }
 
     @Override
-    public void Functions(int a) {
+    public void Functions(int w) {
 
+        if (w == 1) {
+            System.out.println("Buy awm");
+            Mishen(w);
+        }
+        if (w == 2) {
+            System.out.println("Buy scar");
+            Mishen(w);
+        }
+        if (w == 3) {
+            System.out.println("Buy digl");
+            Mishen(w);
+        }
+    }
+    public static void Mishen(int w){
+        switch (w){
+            case 1:
+                System.out.println("400-700m");
+                break;
+            case 2:
+                System.out.println("20-140m");
+                break;
+            case 3:
+                System.out.println("13-50m");
+                break;
+            default:
+                System.out.println("Noy");
+                break;
+        }
     }
 }
