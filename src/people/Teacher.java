@@ -63,9 +63,11 @@ public class Teacher extends Person implements Inter {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int x1 = random.nextInt(0, 400);
-        int x2 = random.nextInt(400, 600);
+        int x2 = random.nextInt(0, 400);
+        int x4 = random.nextInt(200,400);
+        int x5 = random.nextInt(1,200);
         int o1 = x1 + x2;
-        int o2 = x1 - x2;
+        int o2 = x4 - x5;
         int x3 = random.nextInt(1, 3);
         if (x3 == 1) {
             System.out.println(x1 + "+" + x2 + "=?");
@@ -79,13 +81,13 @@ public class Teacher extends Person implements Inter {
             }
         }
         if (x3 == 2) {
-            System.out.println(x1+"-"+x2+"=?");
+            System.out.println(x4+"-"+x5+"=?");
             int b = scanner.nextInt();
             if (b==o2){
-                System.out.println(x1+"-"+x2+"="+o2);
+                System.out.println(x4+"-"+x5+"="+o2);
                 System.out.println("Yes!");
             }else {
-                System.out.println(x1+"-"+x2+"="+o2);
+                System.out.println(x4+"-"+x5+"="+o2);
                 System.out.println("Noy!");
             }
         }

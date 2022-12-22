@@ -1,10 +1,9 @@
 import enum1.Enum;
 import people.Cook;
 import people.Hunter;
-import people.Teacher;
 import people.Miner;
+import people.Teacher;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Run {
@@ -50,16 +49,12 @@ public class Run {
                 System.out.println("1)Registration\n2)Get data");
                 int b = scanner.nextInt();
                 hunter.Function(b);
-                Hunter1();
+
                 System.out.println("\n1)awm\n2)scar\n3)digl");
                 int w = scanner.nextInt();
                 hunter.Functions(w);
             }
         }
-    }
-
-    public static void Hunter1() {
-
     }
 
     public static void Miner1() {
