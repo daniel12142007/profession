@@ -28,7 +28,6 @@ public class Run {
                 System.out.println("1)Registration\n2)Get data");
                 int b = scanner.nextInt();
                 cook.Function(b);
-                Cook1();
             }
         }
         if (gender == 2) {
@@ -42,7 +41,6 @@ public class Run {
                 System.out.println("1)Registration\n2)Get data");
                 int b = scanner.nextInt();
                 miners.Function(b);
-
                 Miner1();
             }
             if (a == 2) {
@@ -91,10 +89,5 @@ public class Run {
         } catch (Exception e) {
             System.out.println("Write numbers");
         }
-
-    }
-
-    public static void Cook1() {
-
     }
 }
