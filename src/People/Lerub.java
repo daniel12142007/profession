@@ -29,27 +29,27 @@ public class Lerub extends Person implements Inter {
                 int age = an.nextInt();
                 Lerub lerub = new Lerub(name, age);
                 lerubs.add(lerub);
-                System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+                System.out.println("1)Registration\n2)Get data");
                 b = an.nextInt();
             } catch (Exception e) {
-                System.out.println("Веди првильно данные!");
+                System.out.println("Drive right!");
             }
         }
+//        if (b == 2) {
+//            System.out.println("Select ID to delete");
+//            b = an.nextInt();
+//            System.out.println("removed by ID" + lerubs.get(b));
+//            lerubs.remove(b);
+//            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+//            b = an.nextInt();
+//        }
+//        if (b == 3) {
+//            lerubs.removeAll(lerubs);
+//            System.out.println("Data deleted");
+//            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+//            b = an.nextInt();
+//        }
         if (b == 2) {
-            System.out.println("Select ID to delete");
-            b = an.nextInt();
-            System.out.println("removed by ID" + lerubs.get(b));
-            lerubs.remove(b);
-            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-            b = an.nextInt();
-        }
-        if (b == 3) {
-            lerubs.removeAll(lerubs);
-            System.out.println("Data deleted");
-            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-            b = an.nextInt();
-        }
-        if (b == 4) {
             System.out.println("Your data:");
             System.out.println(lerubs);
             System.out.println("You logger!");

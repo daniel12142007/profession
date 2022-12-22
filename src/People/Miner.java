@@ -29,27 +29,27 @@ public class Miner extends Person implements Inter {
                 int age = an.nextInt();
                 Miner miner = new Miner(name, age);
                 miners.add(miner);
-                System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+                System.out.println("1)Registration\n2)Get data");
                 b = an.nextInt();
             } catch (Exception p) {
-                System.out.println("Веди првильно данные!");
+                System.out.println("Drive right!!");
             }
         }
+//        if (b == 2) {
+//            System.out.println("Select ID to delete");
+//            b = an.nextInt();
+//            System.out.println("removed by ID" + miners.get(b));
+//            miners.remove(b);
+//            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+//            b = an.nextInt();
+//        }
+//        if (b == 3) {
+//            miners.removeAll(miners);
+//            System.out.println("Data deleted");
+//            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
+//            b = an.nextInt();
+//        }
         if (b == 2) {
-            System.out.println("Select ID to delete");
-            b = an.nextInt();
-            System.out.println("removed by ID" + miners.get(b));
-            miners.remove(b);
-            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-            b = an.nextInt();
-        }
-        if (b == 3) {
-            miners.removeAll(miners);
-            System.out.println("Data deleted");
-            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-            b = an.nextInt();
-        }
-        if (b == 4) {
             System.out.println("Your data:");
             System.out.println(miners);
             System.out.println("You miner!");
@@ -61,53 +61,58 @@ public class Miner extends Person implements Inter {
     public void Functions(int a) {
         Scanner an = new Scanner(System.in);
         if (a == 1) {
-            System.out.println("Вы можете добывать камень");
-            System.out.println("Сколько камня вы хотите добыть(600)");
+            System.out.println("You can mine stone");
+            System.out.println("It takes 2 durability to break 1 block!");
+            System.out.println("How much stone do you want to mine?(600)");
             int b = an.nextInt();
-            if (b <= 600) {
-                System.out.println("Вы получили " + b + " камня");
+            if (b <= 300) {
+                System.out.println("You received " + b + " stone");
             } else {
-                System.out.println("Ваша кирка была сломана!");
+                System.out.println("Your pick has been broken!");
             }
         }
         if (a == 2) {
-            System.out.println("Вы можете добывать железо");
-            System.out.println("Сколько железо вы хотите добыть(800)");
+            System.out.println("You can mine iron");
+            System.out.println("It takes 2 durability to break 1 block!");
+            System.out.println("How much iron do you want to mine?(800)");
             int b = an.nextInt();
-            if (b <= 800) {
-                System.out.println("Вы получили " + b + " железо");
+            if (b <= 400) {
+                System.out.println("You received " + b + " iron");
             } else {
-                System.out.println("Ваша кирка была сломана!");
+                System.out.println("Your pick has been broken!");
             }
         }
         if (a == 3) {
-            System.out.println("Вы можете добывать алмаз");
-            System.out.println("Сколько алмаза вы хотите добыть(1200)");
+            System.out.println("You can mine diamond");
+            System.out.println("It takes 2 durability to break 1 block!");
+            System.out.println("How much diamond do you want to mine?(1200)");
             int b = an.nextInt();
-            if (b <= 1200) {
-                System.out.println("Вы получили " + b + " алмаза");
+            if (b <= 600) {
+                System.out.println("You received " + b + " diamond");
             } else {
-                System.out.println("Ваша кирка была сломана!");
+                System.out.println("Your pick has been broken!");
             }
         }
         if (a == 4) {
-            System.out.println("Вы можете добывать железо");
-            System.out.println("Сколько железо вы хотите добыть(400)");
+            System.out.println("You can mine iron");
+            System.out.println("It takes 2 durability to break 1 block!");
+            System.out.println("How much iron do you want to mine?(400)");
             int b = an.nextInt();
-            if (b <= 400) {
-                System.out.println("Вы получили " + b + " железо");
+            if (b <= 200) {
+                System.out.println("You received " + b + " iron");
             } else {
-                System.out.println("Ваша кирка была сломана!");
+                System.out.println("Your pick has been broken!");
             }
         }
         if (a == 5) {
-            System.out.println("Вы можете добывать обсидиан");
-            System.out.println("Сколько обсидиана вы хотите добыть(2000)");
+            System.out.println("You can mine obsidian");
+            System.out.println("It takes 2 durability to break 1 block!");
+            System.out.println("How much obsidian do you want to mine?(2000)");
             int b = an.nextInt();
-            if (b <= 2000) {
-                System.out.println("Вы получили " + b + " обсидиана");
+            if (b <= 1000) {
+                System.out.println("You received " + b + " obsidian");
             } else {
-                System.out.println("Ваша кирка была сломана!");
+                System.out.println("Your pick has been broken!");
             }
         }
     }
