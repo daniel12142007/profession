@@ -4,7 +4,12 @@ public abstract class Person {
     private String name;
     private int age;
 
-    public Person(String name, int age) {
+    public Person(String name, int age) throws Eror{
+        if (age<0){
+            throw new Eror("Ты не родился");
+        }if (age>100){
+            throw new Eror("Ты сдох");
+        }
         this.name = name;
         this.age = age;
     }
