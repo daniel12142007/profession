@@ -56,4 +56,9 @@ public class Hunter extends Person implements Inter {
         }
         return b;
     }
+
+    @Override
+    public void Functions(int a) {
+
+    }
 }

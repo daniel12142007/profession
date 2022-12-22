@@ -56,4 +56,9 @@ public class Lerub extends Person implements Inter {
         }
         return b;
     }
+
+    @Override
+    public void Functions(int a) {
+
+    }
 }

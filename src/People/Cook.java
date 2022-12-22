@@ -55,4 +55,9 @@ public class Cook extends Person implements Inter {
         }
         return b;
     }
+
+    @Override
+    public void Functions(int a) {
+
+    }
 }
