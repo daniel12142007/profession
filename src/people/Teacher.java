@@ -5,6 +5,7 @@ import interface1.Inter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Teacher extends Person implements Inter {
@@ -59,6 +60,34 @@ public class Teacher extends Person implements Inter {
 
     @Override
     public void Functions(int a) {
-
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int x1 = random.nextInt(0, 400);
+        int x2 = random.nextInt(400, 600);
+        int o1 = x1 + x2;
+        int o2 = x1 - x2;
+        int x3 = random.nextInt(1, 3);
+        if (x3 == 1) {
+            System.out.println(x1 + "+" + x2 + "=?");
+            int b = scanner.nextInt();
+            if (b == o1) {
+                System.out.println(x1 + "+" + x2 + "=" + o1);
+                System.out.println("Yes!");
+            } else {
+                System.out.println(x1 + "+" + x2 + "=" + o1);
+                System.out.println("Noy!");
+            }
+        }
+        if (x3 == 2) {
+            System.out.println(x1+"-"+x2+"=?");
+            int b = scanner.nextInt();
+            if (b==o2){
+                System.out.println(x1+"-"+x2+"="+o2);
+                System.out.println("Yes!");
+            }else {
+                System.out.println(x1+"-"+x2+"="+o2);
+                System.out.println("Noy!");
+            }
+        }
     }
 }

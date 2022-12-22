@@ -4,6 +4,7 @@ import people.Hunter;
 import people.Teacher;
 import people.Miner;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Run {
@@ -22,7 +23,7 @@ public class Run {
                 System.out.println("1)Registration\n2)Get data");
                 int b = scanner.nextInt();
                 teacher.Function(b);
-                Teacher1();
+                teacher.Functions(b);
             }
             if (a == 2) {
                 System.out.println("1)Registration\n2)Get data");
@@ -51,10 +52,6 @@ public class Run {
                 Hunter1();
             }
         }
-    }
-
-    public static void Teacher1() {
-
     }
 
     public static void Hunter1() {
