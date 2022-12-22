@@ -1,7 +1,7 @@
-package People;
+package people;
 
-import Abstract.Person;
-import Interface.Inter;
+import abstract1.Person;
+import interface1.Inter;
 
 import java.util.ArrayList;
 import java.util.List;

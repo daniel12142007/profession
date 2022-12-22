@@ -1,4 +1,4 @@
-package Abstract;
+package abstract1;
 
 public abstract class Person {
     private String name;

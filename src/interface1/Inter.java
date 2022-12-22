@@ -1,4 +1,4 @@
-package Interface;
+package interface1;
 
 public interface Inter {
     int Function(int a);
