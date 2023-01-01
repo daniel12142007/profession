@@ -22,7 +22,6 @@ public class Hunter extends Person implements Inter {
         Scanner an1 = new Scanner(System.in);
         List<Hunter> hunters = new ArrayList<>();
         if (b == 1) {
-            try {
                 System.out.println("Enter name");
                 String name = an1.nextLine();
                 System.out.println("Enter age");
@@ -31,9 +30,6 @@ public class Hunter extends Person implements Inter {
                 hunters.add(hunter);
                 System.out.println("1)Registration\n2)Get data");
                 b = an.nextInt();
-            } catch (Exception i) {
-                System.out.println("Drive right!!");
-            }
         }
 //        if (b == 2) {
 //            System.out.println("Select ID to delete");

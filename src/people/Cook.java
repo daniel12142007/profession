@@ -21,7 +21,6 @@ public class Cook extends Person implements Inter {
         Scanner an1 = new Scanner(System.in);
         List<Cook> cooks = new ArrayList<>();
         if (b == 1) {
-            try {
                 System.out.println("Enter name");
                 String name = an1.nextLine();
                 System.out.println("Enter age");
@@ -30,9 +29,6 @@ public class Cook extends Person implements Inter {
                 cooks.add(cook);
                 System.out.println("1)Registration\n2)Get data");
                 b = an.nextInt();
-            } catch (Exception q) {
-                System.out.println("Drive right!!");
-            }
         }
 //        if (b == 2) {
 //            System.out.println("Select ID to delete");
@@ -58,6 +54,30 @@ public class Cook extends Person implements Inter {
 
     @Override
     public void Functions(int a) {
+        Scanner scanner = new Scanner(System.in);
+        int b = scanner.nextInt();
+        if (b == 1) {
+            String n = scanner.nextLine();
+switch (n){
+    case"":
+        System.out.println();
+        break;
+    case"  ":
+        System.out.println();
+        break;
+    case" ":
+        System.out.println();
+        break;
+    default:
+        System.out.println("Noy");
+        break;
+}
+        }
+        if (b == 2) {
 
+        }
+        if (b == 3) {
+
+        }
     }
 }
