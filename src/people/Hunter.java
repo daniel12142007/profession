@@ -31,20 +31,6 @@ public class Hunter extends Person implements Inter {
                 System.out.println("1)Registration\n2)Get data");
                 b = an.nextInt();
         }
-//        if (b == 2) {
-//            System.out.println("Select ID to delete");
-//            b = an.nextInt();
-//            System.out.println("removed by ID" + hunters.get(b));
-//            hunters.remove(b);
-//            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-//            b = an.nextInt();
-//        }
-//        if (b == 3) {
-//            hunters.removeAll(hunters);
-//            System.out.println("Data deleted");
-//            System.out.println("1)Registration\n2)Deletion by ID\n3)Delete everything\n4)Get data");
-//            b = an.nextInt();
-//        }
         if (b == 2) {
             System.out.println("Your data:");
             System.out.println(hunters);
