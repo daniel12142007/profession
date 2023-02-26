@@ -13,11 +13,9 @@ public class Miner extends Person implements Inter {
     }
 
     public Miner() {
-        super();
     }
 
-    @Override
-    public int Function(int b) {
+    public void Function() {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Miner> miners = new ArrayList<>();
@@ -32,7 +30,6 @@ public class Miner extends Person implements Inter {
             System.out.println("Your data:");
             System.out.println(miners);
             System.out.println("You miner!");
-        return b;
     }
 
     @Override
