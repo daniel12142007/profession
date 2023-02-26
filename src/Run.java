@@ -18,17 +18,18 @@ public class Run {
                 System.out.println("You chose the gender:" + Enum.MALE);
                 System.out.println("Choose a profession:");
                 System.out.println("1)teacher\n2)cook");
-                int a = scanner.nextInt();
-                if (a == 1) {
-                    System.out.println("1)Registration\n2)Get data");
-                    int b = scanner.nextInt();
-                    teacher.Function(b);
-                    teacher.Functions(b);
-                }
-                if (a == 2) {
-                    System.out.println("1)Registration\n2)Get data");
-                    int b = scanner.nextInt();
-                    cook.Function(b);
+                String a = scanner.nextLine();
+                switch (a) {
+                    case "teacher":
+                        teacher.Function(1);
+                        teacher.Functions(1);
+                        break;
+                    case "cook":
+                        cook.Function(1);
+                        break;
+                    default:
+                        System.err.println("error");
+                        break;
                 }
             }
             case "male" -> {
@@ -36,22 +37,21 @@ public class Run {
                 Miner miners = new Miner();
                 System.out.println("You chose the gender:" + Enum.FEMALE);
                 System.out.println("Choose a profession:");
-                System.out.println("1)Miner\n2)Hunter");
+                System.out.println("1)miner\n2)hunter");
                 String b = scanner.nextLine();
                 switch (b) {
-                    case "Miner":
-                        System.out.println("1)Registration\n2)Get data");
-                        int c = scanner.nextInt();
-                        miners.Function(c);
+                    case "miner":
+                        miners.Function(1);
                         Miner1();
                         break;
-                    case "Hunter":
-                        System.out.println("1)Registration\n2)Get data");
-                        int s = scanner.nextInt();
-                        hunter.Function(s);
+                    case "hunter":
+                        hunter.Function(1);
                         System.out.println("\n1)awm\n2)scar\n3)digl");
                         int w = scanner.nextInt();
                         hunter.Functions(w);
+                        break;
+                    default:
+                        System.err.println("eror");
                         break;
                 }
             }

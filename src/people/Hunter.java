@@ -29,8 +29,6 @@ public class Hunter extends Person implements Inter {
         int age = an.nextInt();
         Hunter hunter = new Hunter(id, name, age);
         hunters.add(hunter);
-        System.out.println("1)Registration\n2)Get data");
-        b = an.nextInt();
         System.out.println("Your data:");
         System.out.println(hunters);
         System.out.println("You hunter!");
