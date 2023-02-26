@@ -29,8 +29,6 @@ public class Cook extends Person implements Inter {
             int age = an.nextInt();
             Cook cook = new Cook(id, name, age);
             cooks.add(cook);
-            System.out.println("1)Registration\n2)Get data");
-            b = an.nextInt();
             System.out.println("Your data:");
             System.out.println(cooks);
             System.out.println("You cook!");

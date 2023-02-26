@@ -29,8 +29,6 @@ public class Miner extends Person implements Inter {
             int age = an.nextInt();
             Miner miner = new Miner(id,name, age);
             miners.add(miner);
-            System.out.println("1)Registration\n2)Get data");
-            b = an.nextInt();
             System.out.println("Your data:");
             System.out.println(miners);
             System.out.println("You miner!");

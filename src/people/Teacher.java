@@ -32,8 +32,6 @@ public class Teacher extends Person implements Inter {
             int age = an.nextInt();
             Teacher teacher = new Teacher(id, name, age);
             teachers.add(teacher);
-            System.out.println("1)Registration\n2)Get data");
-            b = an.nextInt();
         } catch (Exception e) {
             System.out.println("Drive right!");
         }
