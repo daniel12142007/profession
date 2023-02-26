@@ -15,11 +15,10 @@ public class Teacher extends Person implements Inter {
     }
 
     public Teacher() {
-        super();
     }
 
     @Override
-    public int Function(int b) {
+    public void Function() {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Teacher> teachers = new ArrayList<>();
@@ -38,8 +37,6 @@ public class Teacher extends Person implements Inter {
         System.out.println("Your data:");
         System.out.println(teachers);
         System.out.println("You teacher!");
-
-        return b;
     }
 
     @Override

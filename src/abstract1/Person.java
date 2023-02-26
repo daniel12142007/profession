@@ -11,30 +11,6 @@ public abstract class Person<T, V> {
         this.age = age;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public T getName() {
-        return name;
-    }
-
-    public void setName(T name) {
-        this.name = name;
-    }
-
-    public V getAge() {
-        return age;
-    }
-
-    public void setAge(V age) {
-        this.age = age;
-    }
-
     public Person() {
     }
 
@@ -46,6 +22,4 @@ public abstract class Person<T, V> {
                ", age->" + age +
                '}';
     }
-
-    public abstract int Function(int b);
 }

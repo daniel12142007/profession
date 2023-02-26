@@ -21,11 +21,11 @@ public class Run {
                 String a = scanner.nextLine();
                 switch (a) {
                     case "teacher":
-                        teacher.Function(1);
+                        teacher.Function();
                         teacher.Functions(1);
                         break;
                     case "cook":
-                        cook.Function(1);
+                        cook.Function();
                         break;
                     default:
                         System.err.println("error");
@@ -41,11 +41,11 @@ public class Run {
                 String b = scanner.nextLine();
                 switch (b) {
                     case "miner":
-                        miners.Function(1);
+                        miners.Function();
                         Miner1();
                         break;
                     case "hunter":
-                        hunter.Function(1);
+                        hunter.Function();
                         System.out.println("\n1)awm\n2)scar\n3)digl");
                         int w = scanner.nextInt();
                         hunter.Functions(w);
