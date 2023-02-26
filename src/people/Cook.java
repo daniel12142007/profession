@@ -21,7 +21,6 @@ public class Cook extends Person implements Inter {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Cook> cooks = new ArrayList<>();
-        if (b == 1) {
             System.out.println("Enter id");
             Long id = an.nextLong();
             System.out.println("Enter name");
@@ -32,12 +31,9 @@ public class Cook extends Person implements Inter {
             cooks.add(cook);
             System.out.println("1)Registration\n2)Get data");
             b = an.nextInt();
-        }
-        if (b == 2) {
             System.out.println("Your data:");
             System.out.println(cooks);
             System.out.println("You cook!");
-        }
         return b;
     }
 

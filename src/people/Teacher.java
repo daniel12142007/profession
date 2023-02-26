@@ -23,27 +23,24 @@ public class Teacher extends Person implements Inter {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Teacher> teachers = new ArrayList<>();
-        if (b == 1) {
-            try {
-                System.out.println("Enter id");
-                Long id = an.nextLong();
-                System.out.println("Enter name");
-                String name = an1.nextLine();
-                System.out.println("Enter age");
-                int age = an.nextInt();
-                Teacher teacher = new Teacher(id, name, age);
-                teachers.add(teacher);
-                System.out.println("1)Registration\n2)Get data");
-                b = an.nextInt();
-            } catch (Exception e) {
-                System.out.println("Drive right!");
-            }
+        try {
+            System.out.println("Enter id");
+            Long id = an.nextLong();
+            System.out.println("Enter name");
+            String name = an1.nextLine();
+            System.out.println("Enter age");
+            int age = an.nextInt();
+            Teacher teacher = new Teacher(id, name, age);
+            teachers.add(teacher);
+            System.out.println("1)Registration\n2)Get data");
+            b = an.nextInt();
+        } catch (Exception e) {
+            System.out.println("Drive right!");
         }
-        if (b == 2) {
-            System.out.println("Your data:");
-            System.out.println(teachers);
-            System.out.println("You teacher!");
-        }
+        System.out.println("Your data:");
+        System.out.println(teachers);
+        System.out.println("You teacher!");
+
         return b;
     }
 

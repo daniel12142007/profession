@@ -21,23 +21,19 @@ public class Hunter extends Person implements Inter {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Hunter> hunters = new ArrayList<>();
-        if (b == 1) {
-            System.out.println("Enter id");
-            Long id = an.nextLong();
-            System.out.println("Enter name");
-            String name = an1.nextLine();
-            System.out.println("Enter age");
-            int age = an.nextInt();
-            Hunter hunter = new Hunter(id, name, age);
-            hunters.add(hunter);
-            System.out.println("1)Registration\n2)Get data");
-            b = an.nextInt();
-        }
-        if (b == 2) {
-            System.out.println("Your data:");
-            System.out.println(hunters);
-            System.out.println("You hunter!");
-        }
+        System.out.println("Enter id");
+        Long id = an.nextLong();
+        System.out.println("Enter name");
+        String name = an1.nextLine();
+        System.out.println("Enter age");
+        int age = an.nextInt();
+        Hunter hunter = new Hunter(id, name, age);
+        hunters.add(hunter);
+        System.out.println("1)Registration\n2)Get data");
+        b = an.nextInt();
+        System.out.println("Your data:");
+        System.out.println(hunters);
+        System.out.println("You hunter!");
         return b;
     }
 

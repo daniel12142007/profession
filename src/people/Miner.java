@@ -21,7 +21,6 @@ public class Miner extends Person implements Inter {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Miner> miners = new ArrayList<>();
-        if (b == 1) {
             System.out.println("Enter id");
             Long id = an.nextLong();
             System.out.println("Enter name");
@@ -32,12 +31,9 @@ public class Miner extends Person implements Inter {
             miners.add(miner);
             System.out.println("1)Registration\n2)Get data");
             b = an.nextInt();
-        }
-        if (b == 2) {
             System.out.println("Your data:");
             System.out.println(miners);
             System.out.println("You miner!");
-        }
         return b;
     }
 
