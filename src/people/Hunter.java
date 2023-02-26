@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Hunter extends Person implements Inter {
-    public Hunter(String name, int age) {
-        super(name, age);
+    public Hunter(Long id, Object name, Object age) {
+        super(id, name, age);
     }
 
     public Hunter() {
@@ -22,14 +22,16 @@ public class Hunter extends Person implements Inter {
         Scanner an1 = new Scanner(System.in);
         List<Hunter> hunters = new ArrayList<>();
         if (b == 1) {
-                System.out.println("Enter name");
-                String name = an1.nextLine();
-                System.out.println("Enter age");
-                int age = an.nextInt();
-                Hunter hunter = new Hunter(name, age);
-                hunters.add(hunter);
-                System.out.println("1)Registration\n2)Get data");
-                b = an.nextInt();
+            System.out.println("Enter id");
+            Long id = an.nextLong();
+            System.out.println("Enter name");
+            String name = an1.nextLine();
+            System.out.println("Enter age");
+            int age = an.nextInt();
+            Hunter hunter = new Hunter(id, name, age);
+            hunters.add(hunter);
+            System.out.println("1)Registration\n2)Get data");
+            b = an.nextInt();
         }
         if (b == 2) {
             System.out.println("Your data:");
@@ -55,8 +57,9 @@ public class Hunter extends Person implements Inter {
             Mishen(w);
         }
     }
-    public static void Mishen(int w){
-        switch (w){
+
+    public static void Mishen(int w) {
+        switch (w) {
             case 1:
                 System.out.println("400-700m");
                 break;
