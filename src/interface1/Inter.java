@@ -1,6 +1,6 @@
 package interface1;
 
 public interface Inter {
-    int Function(int a);
+    void Function();
     void Functions(int a);
 }

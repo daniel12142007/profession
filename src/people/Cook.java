@@ -16,8 +16,7 @@ public class Cook extends Person implements Inter {
     public Cook() {
     }
 
-    @Override
-    public int Function(int b) {
+    public void Function() {
         Scanner an = new Scanner(System.in);
         Scanner an1 = new Scanner(System.in);
         List<Cook> cooks = new ArrayList<>();
@@ -32,7 +31,6 @@ public class Cook extends Person implements Inter {
             System.out.println("Your data:");
             System.out.println(cooks);
             System.out.println("You cook!");
-        return b;
     }
 
     @Override
