@@ -11,6 +11,14 @@ public abstract class Person<T, V> {
         this.age = age;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public T getName() {
         return name;
     }
@@ -32,8 +40,9 @@ public abstract class Person<T, V> {
 
     @Override
     public String toString() {
-        return "{" +
-               "name->'" + name + '\'' +
+        return "Person{" +
+               "id->" + id +
+               ", name->" + name +
                ", age->" + age +
                '}';
     }
